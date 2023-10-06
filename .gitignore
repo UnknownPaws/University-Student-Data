@@ -185,4 +185,4 @@ fabric.properties
 
 ### Other ignores
 # config to protect password
-Files/config/config.ini
+Files/config/template_config.ini
