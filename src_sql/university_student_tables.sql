@@ -19,6 +19,8 @@ CREATE TABLE students(
   ,program                            VARCHAR(13) NOT NULL
   ,specialisation                     VARCHAR(51) NOT NULL
   ,semester                           VARCHAR(3) NOT NULL
+  ,FOREIGN KEY (id) REFERENCES scores (id)
+  ,FOREIGN KEY (university) REFERENCES universities (university_name)
 );
 
 INSERT INTO students(id, student_name, university, program, specialisation, semester) VALUES
@@ -181,6 +183,7 @@ CREATE TABLE scores(
    id                     INTEGER  NOT NULL PRIMARY KEY
   ,generalManagementScore INTEGER  NOT NULL
   ,domainSpecificScore    INTEGER  NOT NULL
+  ,FOREIGN KEY (id) REFERENCES students (id)
 );
 
 INSERT INTO scores(id,generalManagementScore,domainSpecificScore) VALUES 
@@ -351,6 +354,7 @@ CREATE TABLE universities(
   ,num_students                   INTEGER 
   ,student_staff_ratio            NUMERIC(5,1)
   ,international_students_percent NUMERIC(4,2)
+  ,FOREIGN KEY (country) REFERENCES countries (country)
 );
 
 INSERT INTO universities(global_rank,university_name,country,teaching_score,internationality,research_score,citation_score,income_score,num_students,student_staff_ratio,international_students_percent) VALUES

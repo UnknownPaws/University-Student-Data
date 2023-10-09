@@ -28,7 +28,10 @@ def query_with_fetchall():
         dbconfig = read_db_config()
         conn = MySQLConnection(**dbconfig)
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM students")
+        # cursor.execute("SELECT * FROM students")
+        # cursor.execute("SELECT * FROM scores")
+        # cursor.execute("SELECT * FROM universities")
+        cursor.execute("SELECT * FROM countries")
         rows = cursor.fetchall()
 
         print('Total Row(s):', cursor.rowcount)
@@ -44,5 +47,5 @@ def query_with_fetchall():
 
 
 if __name__ == '__main__':
-    #connect()
-    query_with_fetchall()
+    connect()
+    # query_with_fetchall()
