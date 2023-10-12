@@ -32,6 +32,19 @@ def query_with_fetchall():
         # cursor.execute("SELECT * FROM scores")
         # cursor.execute("SELECT * FROM universities")
         cursor.execute("SELECT * FROM countries")
+
+        # List of Queries
+        query1(cursor)
+        query2(cursor)
+        query3(cursor)
+        query4(cursor)
+        query5(cursor)
+        query6(cursor)
+        query7(cursor)
+        query8(cursor)
+        query9(cursor)
+        query10(cursor)
+
         rows = cursor.fetchall()
 
         print('Total Row(s):', cursor.rowcount)
@@ -44,6 +57,28 @@ def query_with_fetchall():
     finally:
         cursor.close()
         conn.close()
+
+
+def query1(cursor):
+
+def query2(cursor):
+
+def query3(cursor):
+
+def query4(cursor):
+
+def query5(cursor):
+
+def query6(cursor):
+
+def query7(cursor):
+
+def query8(cursor):
+
+def query9(cursor):
+
+def query10(cursor):
+
 
 
 if __name__ == '__main__':
