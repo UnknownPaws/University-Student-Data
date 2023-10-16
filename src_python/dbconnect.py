@@ -50,17 +50,21 @@ def queries():
         cursor.close()
         conn.close()
 
+
 def query1(cursor):
     cursor.execute('SELECT COUNT(*) FROM universities WHERE country = "United States of America";')
     return cursor.fetchone()[0]
+
 
 def query2(cursor):
     cursor.execute('SELECT COUNT(*) FROM universities WHERE country = "United Kingdom";')
     return cursor.fetchone()[0]
 
+
 def query3(cursor):
     cursor.execute('SELECT COUNT(DISTINCT UNIVERSITY) FROM students;')
     return cursor.fetchone()[0]
+
 
 def query4(cursor, university_name):
     cursor.execute('SELECT generalManagementScore, domainSpecificScore FROM students INNER JOIN scores USING(id) WHERE university = "' + university_name + '";')
@@ -79,6 +83,7 @@ def query4(cursor, university_name):
 # def query6(cursor):
 
 # def query7(cursor):
+
 
 def query8(cursor):
     cursor.execute('SELECT DISTINCT country FROM countries INNER JOIN universities USING(country) WHERE gdp_percent IS NOT NULL;')
@@ -110,7 +115,6 @@ def query8(cursor):
 # def query9(cursor):
 
 # def query10(cursor):
-
 
 
 if __name__ == '__main__':
