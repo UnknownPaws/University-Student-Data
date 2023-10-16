@@ -186,3 +186,6 @@ fabric.properties
 ### Other ignores
 # config to protect password
 Files/config/config.ini
+
+# test sql file for queries
+src_sql/test_query.sql
