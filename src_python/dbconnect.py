@@ -38,11 +38,11 @@ def queries():
               sep='\n')
         
         # List of Queries
-        query5(cursor)
-        query6(cursor)
-        query7(cursor)
-        query9(cursor)
-        query10(cursor)
+        # query5(cursor)
+        # query6(cursor)
+        # query7(cursor)
+        # query9(cursor)
+        # query10(cursor)
 
         rows = cursor.fetchall()
 
@@ -93,11 +93,12 @@ def query8(cursor):
         cursor.execute('SELECT teaching_score, gdp_percent FROM countries INNER JOIN universities USING(country) WHERE gdp_percent IS NOT NULL AND country = "' + country[0] + '";')
         score_and_gdp_table = cursor.fetchall()
         country_score = 0
+        gdp_percent = int()
 
         for score_and_gdp in score_and_gdp_table:
             teaching_score = score_and_gdp[0]
             gdp_percent = score_and_gdp[1]
-            country_score += teaching_score * gdp_percent
+            country_score += teaching_score * (gdp_percent/100)
 
         # score_and_gdp_table should never be 0 at this point
         country_score /= len(score_and_gdp_table)
