@@ -186,7 +186,7 @@ CREATE TABLE scores(
   ,FOREIGN KEY (id) REFERENCES students (id)
 );
 
-INSERT INTO scores(id,generalManagementScore,domainSpecificScore) VALUES 
+INSERT INTO students(id,generalManagementScore,domainSpecificScore) VALUES
 (0,50,50),
 (1,50,50),
 (2,50,50),

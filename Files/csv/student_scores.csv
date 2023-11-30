@@ -1,4 +1,4 @@
-,NAME OF THE STUDENT,UNIVERSITY,PROGRAM NAME,Specialisation,SEMESTER,Domain,GENERAL MANAGEMENT SCORE (OUT of 50),Domain Specific SCORE (OUT 50),TOTAL SCORE (OUT of 100),RANK,PERCENTILE
+id,student_name,university,program,specialisation,semester,domain,generalManagementScore,domainSpecificScore,totalScore,rank,percentile
 0,Camila Wood,Stanford University,B.Com,Honours,5th,Finance,50,50,100,1,1
 1,Alexander Thompson,Stanford University,B.Com,Financial Services,5th,Finance,50,50,100,2,0.993377483
 2,Liam Taylor,Harvard University,B.Com,Accounting Analytics,5th,BA,50,50,100,3,0.986754967
@@ -25,7 +25,7 @@
 23,Matthew Johnson,Harvard University,MBA,International Business,3rd,IB,49,43,92,24,0.847682119
 24,Jackson Baker,Stanford University,BBA,International Business,5th,IB,45,47,92,25,0.841059603
 25,Ella Martinez,Harvard University,B.Com,Information Technology with Accounting Analytics,5th,BA,49,43,92,26,0.834437086
-26,Henry Perez,Stanford University,B.Com,Honours,5th,Finance,41,50,91,27,0.82781457
+26,Henry Perez,Stanford University,B.Com,Honours,5th,Finance,41,50,91,27,0.82781457s
 27,Ava White,Stanford University,BBA,International Business,5th,IB,45,46,91,28,0.821192053
 28,Gabriel Miller,Stanford University,B.Com,Honours,5th,Finance,44,46,90,29,0.814569536
 29,Mia Brown,Stanford University,BBA,Financial Services,5th,Finance,41,49,90,30,0.80794702
